@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Times of Malta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-neutral-100 text-gray-800 font-sans">
+
+  <!-- Top Navigation -->
+  <div class="flex justify-end space-x-4 p-4 text-sm text-gray-600 bg-gray-100">
+    <a href="#" class="hover:underline">Jobs</a>
+    <a href="#" class="hover:underline">Polls</a>
+    <a href="#" class="hover:underline">Archive</a>
+    <a href="#" class="hover:underline font-semibold">Subscribe</a>
+  </div>
+
+  <!-- Logo -->
+  <div class="text-3xl font-bold text-center py-4">Times of Malta</div>
+
+  <!-- Section Navigation -->
+  <nav class="flex justify-center space-x-6 bg-white py-3 border-b">
+    <a href="#" class="hover:underline">Latest</a>
+    <a href="#" class="hover:underline">National</a>
+    <a href="#" class="hover:underline">World</a>
+    <a href="#" class="hover:underline">Opinion</a>
+    <a href="#" class="hover:underline">Business</a>
+    <a href="#" class="hover:underline">Entertainment</a>
+  </nav>
+
+  <!-- Collage Section -->
+  <section class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Example Tile -->
+    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+      <img src="images/article1.jpg" alt="Sign-language AI" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+        <div>
+          <h2 class="text-white text-xl font-bold">Bridging Silence</h2>
+          <p class="text-sm text-white mt-1">A Maltese student builds real-time sign-language AI.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more tiles here following the same structure -->
+
+  </section>
+
+  <!-- Eye Icon in Bottom Right -->
+  <div class="fixed bottom-4 right-4">
+    <svg class="w-8 h-8 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C21.27 7.61 17 4.5 12 4.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8a3 3 0 100 6 3 3 0 000-6z" />
+    </svg>
+  </div>
+
 </body>
 </html>
