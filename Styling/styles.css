@@ -1,95 +1,41 @@
-/* Load the custom Brandes font */
-@font-face {
-  font-family: 'Brandes';
-  src: url('Brandes-ov1yq.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
 
-/* Base styling */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Brandes', Georgia, serif;
-  background-color: #ffffff;
-  color: #441111;
-}
 
-/* Top utility bar (Jobs, Polls, etc.) */
-.top-bar {
-  background-color: #6B4200; /* dark brown */
-  color: white;
-  padding: 10px 30px;
-  text-align: right;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.top-bar a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-/* Logo styling */
-.logo {
+    /* Optional: Keep your logo and branding styles */
+    
+.logo-header {
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #6B4200;
-  padding: 30px 0 20px;
 }
 
-/* Navigation bar */
-.nav-bar {
-  background-color: #C6A878; /* beige/tan bar */
-  display: flex;
-  justify-content: center;
-  padding: 12px 0;
-  font-size: 18px;
-  font-weight: bold;
+
+    body {
+  background-color: pink;
 }
 
-.nav-bar a {
-  color: white;
+/* Top bar header styling */
+header.top-bar a {
+  all: unset; /* removes Bootstrap/default browser styles */
+  display: inline-block;
+  color: #6B4200 !important;
+  font-family: Georgia, serif !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  cursor: pointer;
   text-decoration: none;
-  margin: 0 20px;
 }
 
-/* Main content placeholder */
-.content {
-  min-height: 300px;
-  padding: 40px;
+header.top-bar a:hover {
+  text-decoration: underline;
 }
 
-/* Eye icon at bottom right */
-.eye-icon {
-  text-align: right;
-  padding: 20px 30px;
-}
 
-.eye-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: #441111;
-}
+    .logo-text {
+      color: #6B4200;
+      font-size: 2rem;
+      font-weight: bold;
+    }
 
-.collage-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-}
-.bg {
-  width: 100%;
-  display: block;
-}
-.tile {
-  position: absolute;
-  width: 25%;
-  height: auto;
-}
-.tile:nth-child(2) { top: 10%; left: 5%; }
-.tile:nth-child(3) { top: 20%; left: 35%; }
-.tile:nth-child(4) { top: 40%; left: 65%; }
-.tile:nth-child(5) { top: 60%; left: 20%; }
-/* Repeat positioning logic depending on layout */
+    .card-overlay {
+      background-color: rgba(206, 166, 166, 0.4);
+    }
+ 

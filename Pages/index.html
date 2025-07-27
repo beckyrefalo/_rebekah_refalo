@@ -4,55 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Times of Malta</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-neutral-100 text-gray-800 font-sans">
+  
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Top Navigation -->
-  <div class="flex justify-end space-x-4 p-4 text-sm text-gray-600 bg-gray-100">
-    <a href="#" class="hover:underline">Jobs</a>
-    <a href="#" class="hover:underline">Polls</a>
-    <a href="#" class="hover:underline">Archive</a>
-    <a href="#" class="hover:underline font-semibold">Subscribe</a>
-  </div>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Logo -->
-  <div class="text-3xl font-bold text-center py-4">Times of Malta</div>
+<!-- Your Custom Styles -->
+<link href="/Styling/styles.css" rel="stylesheet">
 
-  <!-- Section Navigation -->
-  <nav class="flex justify-center space-x-6 bg-white py-3 border-b">
-    <a href="#" class="hover:underline">Latest</a>
-    <a href="#" class="hover:underline">National</a>
-    <a href="#" class="hover:underline">World</a>
-    <a href="#" class="hover:underline">Opinion</a>
-    <a href="#" class="hover:underline">Business</a>
-    <a href="#" class="hover:underline">Entertainment</a>
+  
+
+   <!-- Top Utility Bar -->
+<header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
+  <a href="#">Jobs</a>
+  <a href="#">Polls</a>
+  <a href="#">Archive</a>
+  <a href="#">Subscribe</a>
+</header>
+
+  <!-- Logo Section -->
+  <header class="container d-flex align-items-center justify-content-center py-4">
+
+  <h1 class="m-0 fw-bold display-4 text-center" style="color: #6B4200; font-family: Georgia, serif;">
+    Times of Malta
+  </h1>
+</header>
+
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white border-bottom py-3">
+    <div class="container d-flex justify-content-center gap-4 fw-semibold">
+      <a href="#" class="text-dark text-decoration-none">Latest</a>
+      <a href="#" class="text-dark text-decoration-none">National</a>
+      <a href="#" class="text-dark text-decoration-none">World</a>
+      <a href="#" class="text-dark text-decoration-none">Opinion</a>
+      <a href="#" class="text-dark text-decoration-none">Business</a>
+      <a href="#" class="text-dark text-decoration-none">Entertainment</a>
+    </div>
   </nav>
 
-  <!-- Collage Section -->
-  <section class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Article Tiles -->
+  <section class="container py-5">
+    <div class="row g-4">
 
-    <!-- Example Tile -->
-    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
-      <img src="images/article1.jpg" alt="Sign-language AI" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
-      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
-        <div>
-          <h2 class="text-white text-xl font-bold">Bridging Silence</h2>
-          <p class="text-sm text-white mt-1">A Maltese student builds real-time sign-language AI.</p>
+      <!-- Repeat this .col- block for more tiles -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="position-relative rounded shadow overflow-hidden">
+          <img src="images/article1.jpg" class="w-100" style="height: 250px; object-fit: cover;" alt="Sign-language AI">
+          <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white card-overlay">
+            <h5 class="fw-bold mb-1">Bridging Silence</h5>
+            <p class="small mb-0">A Maltese student builds real-time sign-language AI.</p>
+          </div>
         </div>
       </div>
+
+      <!-- Add more tiles here (copy the .col- block above) -->
+
     </div>
-
-    <!-- Add more tiles here following the same structure -->
-
   </section>
 
-  <!-- Eye Icon in Bottom Right -->
-  <div class="fixed bottom-4 right-4">
-    <svg class="w-8 h-8 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+  <!-- Eye Icon (fixed bottom-right corner) -->
+  <div style="position: fixed; bottom: 1rem; right: 1rem;">
+    <svg class="text-secondary" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C21.27 7.61 17 4.5 12 4.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8a3 3 0 100 6 3 3 0 000-6z" />
     </svg>
   </div>
 
+
+
+  
 </body>
 </html>
