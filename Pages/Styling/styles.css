@@ -1,0 +1,41 @@
+
+
+    /* Optional: Keep your logo and branding styles */
+    
+.logo-header {
+  text-align: center;
+}
+
+
+    body {
+  background-color: pink;
+}
+
+/* Top bar header styling */
+header.top-bar a {
+  all: unset; /* removes Bootstrap/default browser styles */
+  display: inline-block;
+  color: #6B4200 !important;
+  font-family: Georgia, serif !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header.top-bar a:hover {
+  text-decoration: underline;
+}
+
+
+    .logo-text {
+      color: #6B4200;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .card-overlay {
+      background-color: rgba(206, 166, 166, 0.4);
+    }
+ 
