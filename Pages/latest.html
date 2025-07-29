@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Times of Malta</title>
+  
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Your Custom Styles -->
+<link href="Styling/styles.css" rel="stylesheet">
+
+
+   <!-- Top Utility Bar -->
+<nav class="bg-latte border-bottom py-3">
+<header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
+  <a href="#">Jobs</a>
+  <a href="#">Polls</a>
+  <a href="#">Archive</a>
+  <a href="#">Subscribe</a>
+</header>
+
+  <!-- Logo Section -->
+  <header class="container d-flex align-items-center justify-content-center py-4">
+
+  <h1 class="m-0 fw-bold display-4 text-center" style="color: #6B4200; font-family: Georgia, serif;">
+    Times of Malta
+  </h1>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <body>
-    
+  <!-- Navigation Bar -->
+  <nav class="bg-white border-bottom py-3">
+    <div class="container d-flex justify-content-center gap-4 fw-semibold">
+      <a href="#" class="text-dark text-decoration-none">Latest</a>
+      <a href="#" class="text-dark text-decoration-none">National</a>
+      <a href="#" class="text-dark text-decoration-none">World</a>
+      <a href="#" class="text-dark text-decoration-none">Opinion</a>
+      <a href="#" class="text-dark text-decoration-none">Business</a>
+      <a href="#" class="text-dark text-decoration-none">Entertainment</a>
+    </div>
+  </nav>
+
+<!-- 1️⃣  Image Grid (inside your <section class="container py-5">) -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+  <!-- Tile 1 -->
+  <div class="col">
+    <a  data-bs-toggle="modal" data-bs-target="#modalParliament">
+      <img src="Images/Midnight-Parliament.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Midnight Parliament">
+    </a>
+  </div>
+
+  <!-- Tile 2 -->
+  <div class="col">
+    <a  data-bs-toggle="modal" data-bs-target="#modalSolar">
+      <img src="Images/floating-solar-panels.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Floating Solar Panels in Gżira">
+    </a>
+  </div>
+
+  <!-- Repeat for every image … -->
+  <!-- … Mdina -->
+  <div class="col">
+    <a data-bs-toggle="modal" data-bs-target="#modalMdina">
+      <img src="Images/mdina.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Mdina">
+    </a>
+  </div>
+
+  <!-- … Gozo Ferry -->
+  <div class="col">
+    <a data-bs-toggle="modal" data-bs-target="#modalGozo">
+      <img src="Images/gozo-ferry.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Gozo Ferry">
+    </a>
+  </div>
+
+  <!-- … Fort Ricasoli -->
+  <div class="col">
+    <a data-bs-toggle="modal" data-bs-target="#modalRicasoli">
+      <img src="Images/fort-ricasoli.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Fort Ricasoli">
+    </a>
+  </div>
+
+  <!-- … Lottery -->
+  <div class="col">
+    <a data-bs-toggle="modal" data-bs-target="#modalLottery">
+      <img src="Images/lottery.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Lottery">
+    </a>
+  </div>
+
+  <!-- … Dingli Cliffs -->
+  <div class="col">
+    <a data-bs-toggle="modal" data-bs-target="#modalDingli">
+      <img src="Images/dingli-cliffs.jpg"
+           class="img-fluid rounded w-100"
+           style="height:250px;object-fit:cover;"
+           alt="Dingli Cliffs">
+    </a>
+  </div>
+
+</div>
+
+
+<!-- 2️⃣  Modals (place right AFTER the grid or before </body>) -->
+
+<!-- Parliament Modal -->
+<div class="modal fade" id="modalParliament" tabindex="-1" aria-labelledby="lblParliament" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/Midnight-Parliament.jpg" class="w-100 rounded-top" alt="Midnight Parliament">
+      <div class="modal-body">
+        <h5 id="lblParliament" class="mb-2">Midnight Parliament</h5>
+        <p>Valletta to Host First-Ever "Midnight Parliament" in Bid to Boost Youth Engagement
+VALLETTA – In an unprecedented move, the Maltese government has announced the launch of “Midnight Parliament,” a late-night legislative session aimed at involving university students and young professionals in live political debate.
+
+Prime Minister Leanne Mifsud said the initiative will begin as a trial in September, with debates livestreamed on national TV. Critics argue it’s a populist stunt, while supporters hail it as “a bold experiment in democratic accessibility.”
+
+“We need to meet citizens where they are — even if that’s at midnight,” Mifsud said.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Solar Modal -->
+<div class="modal fade" id="modalSolar" tabindex="-1" aria-labelledby="lblSolar" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/floating-solar-panels.jpg" class="w-100 rounded-top" alt="Floating Solar Panels in Gżira">
+      <div class="modal-body">
+        <h5 id="lblSolar" class="mb-2">Floating Solar Panels in Gżira</h5>
+        <p>Gżira Residents Report ‘Humming Sky’ as Solar Energy Project Enters Phase Two
+GŻIRA – A low, persistent hum reported by dozens of residents this week has been traced to Malta’s largest floating solar platform, currently undergoing expansion in Marsamxett Harbour.
+
+The €90 million project, operated by SunWave Energy, aims to supply 15% of the island’s energy needs by 2027. But locals say the sound is affecting sleep and causing anxiety.
+
+An inquiry has been launched. “It sounds like the sea is whispering in Morse code,” said one resident.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Duplicate a block like the two above for every other image:
+     - Change id, aria‑labelledby, img source, alt, heading, and caption. -->
+
+<!-- Mdina Modal -->
+<div class="modal fade" id="modalMdina" tabindex="-1" aria-labelledby="lblMdina" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/mdina.jpg" class="w-100 rounded-top" alt="Mdina">
+      <div class="modal-body">
+        <h5 id="lblMdina" class="mb-2">Mdina</h5>
+        <p>Heritage Malta Discovers Secret Chamber Beneath Mdina Cathedral
+          MDINA – Archaeologists with Heritage Malta have uncovered a previously undocumented chamber beneath St. Paul’s Cathedral, believed to date back to the 13th century.
+
+The chamber, discovered during restoration works, contains early Latin inscriptions and what appears to be a mosaic map of a forgotten port. A team of conservators and historians is currently assessing the site.
+
+Rumors of a hidden chamber have circulated for years, though many dismissed them as urban legend. “This changes everything,” said lead archaeologist Dr. Keith Aquilina.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gozo Modal -->
+<div class="modal fade" id="modalGozo" tabindex="-1" aria-labelledby="lblGozo" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/gozo-ferry.jpg" class="w-100 rounded-top" alt="Gozo Ferry">
+      <div class="modal-body">
+        <h5 id="lblGozo" class="mb-2">Gozo Ferry</h5>
+        <p>Maltese Island to Test First AI-Operated Ferry Between Gozo and Valletta
+          VALLETTA – Transport Malta has unveiled an ambitious pilot project: the island’s first AI-operated ferry, set to run autonomously between Gozo and Valletta by early 2026.
+          
+
+Nicknamed Ċikka, the solar-powered vessel will undergo three months of closed trials starting in October. Authorities claim the ferry can reduce carbon emissions by 40% and cut commute times.
+
+While transport advocates have welcomed the innovation, seafarers’ unions are calling for guarantees about job security.
+
+“We welcome progress, but not at the cost of tradition and livelihood,” said union rep Joseph Galea.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fort Ricasoli Modal -->
+<div class="modal fade" id="modalRicasoli" tabindex="-1" aria-labelledby="lblRicasoli" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/fort-ricasoli.jpg" class="w-100 rounded-top" alt="Fort Ricasoli">
+      <div class="modal-body">
+        <h5 id="lblRicasoli" class="mb-2">Fort Ricasoli</h5>
+        <p>Storm Uncovers 17th-Century Tunnel Linking Fort Ricasoli to Birgu
+          KALKARA – Last week’s unseasonal storm has led to the accidental discovery of a collapsed 17th-century tunnel system, believed to have connected Fort Ricasoli to Birgu during the Knights’ period.
+
+Civil protection teams found the tunnel after part of the shoreline near Rinella Bay gave way, revealing sandstone arches and hand-carved passageways.
+
+Initial surveys suggest it may have served as an emergency supply route during the Great Siege of 1565.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lottery Modal -->
+<div class="modal fade" id="modalLottery" tabindex="-1" aria-labelledby="lblLottery" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/lottery.jpg" class="w-100 rounded-top" alt="Lottery">
+      <div class="modal-body">
+        <h5 id="lblLottery" class="mb-2">Lottery</h5>
+        <p>National Lottery Numbers Accidentally Predicted in Local Play, Causes Public Frenzy
+          MOSTA – Chaos erupted at a local theatre on Saturday after it emerged that a fictional lottery number drawn during the second act of the satirical play Il-Milied tal-Maħfra matched all six numbers of that evening’s actual national lottery draw.
+
+The theatre group claims it was pure coincidence, but social media users have dubbed the playwright “the Nostradamus of Mosta.”
+
+The incident has drawn crowds to the theatre and a small police investigation into betting irregularities — no wrongdoing has been found.
+
+
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dingli Cliffs Modal -->
+<div class="modal fade" id="modalDingli" tabindex="-1" aria-labelledby="lblDingli" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0">
+      <button type="button" class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="Images/dingli-cliffs.jpg" class="w-100 rounded-top" alt="Dingli Cliffs">
+      <div class="modal-body">
+        <h5 id="lblDingli" class="mb-2">Dingli Cliffs</h5>
+        <p>Rare Albino Blue Rock Thrush Spotted in Dingli Cliffs, Birdwatchers Rejoice
+DINGLI – A rare albino Merill (Blue Rock Thrush), Malta’s national bird, was sighted on Dingli Cliffs this morning by a group of amateur birdwatchers.
+
+Ornithologists confirm it is the first albino specimen recorded on the island. BirdLife Malta has cordoned off the area and urged photographers to keep their distance.
+
+“This is like seeing a unicorn,” said avian biologist Dr. Lara Schembri.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
 </body>
 </html>
