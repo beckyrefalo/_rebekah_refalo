@@ -18,10 +18,10 @@
    <!-- Top Utility Bar -->
 <nav class="bg-latte border-bottom py-3">
 <header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
-  <a href="#">Jobs</a>
-  <a href="#">Polls</a>
-  <a href="#">Archive</a>
-  <a href="#">Subscribe</a>
+  <a href="jobs.html">Jobs</a>
+  <a href="polls.html">Polls</a>
+  <a href="archive.html">Archive</a>
+  <a href="subscribe.html">Subscribe</a>
 </header>
 
   <!-- Logo Section -->
@@ -38,12 +38,12 @@
   <!-- Navigation Bar -->
   <nav class="bg-white border-bottom py-3">
     <div class="container d-flex justify-content-center gap-4 fw-semibold">
-      <a href="#" class="text-dark text-decoration-none">Latest</a>
-      <a href="#" class="text-dark text-decoration-none">National</a>
-      <a href="#" class="text-dark text-decoration-none">World</a>
-      <a href="#" class="text-dark text-decoration-none">Opinion</a>
-      <a href="#" class="text-dark text-decoration-none">Business</a>
-      <a href="#" class="text-dark text-decoration-none">Entertainment</a>
+      <a href="latest.html" class="text-dark text-decoration-none">Latest</a>
+      <a href="national.html" class="text-dark text-decoration-none">National</a>
+      <a href="world.html" class="text-dark text-decoration-none">World</a>
+      <a href="opinion.html" class="text-dark text-decoration-none">Opinion</a>
+      <a href="business.html" class="text-dark text-decoration-none">Business</a>
+      <a href="entertainment.html" class="text-dark text-decoration-none">Entertainment</a>
     </div>
   </nav>
 
@@ -52,7 +52,7 @@
 
   <!-- Tile 1 -->
   <div class="col">
-    <a  data-bs-toggle="modal" data-bs-target="#modalParliament">
+    <a  data-bs-toggle="modal" data-bs-target="#modalEnergyBill">
       <img src="Images/Energy-Bill.jpg"
            class="img-fluid rounded w-100"
            style="height:250px;object-fit:cover;"
@@ -62,7 +62,7 @@
 
   <!-- Tile 2 -->
   <div class="col">
-    <a  data-bs-toggle="modal" data-bs-target="#modalSolar">
+    <a  data-bs-toggle="modal" data-bs-target="#modalFastFerry">
       <img src="Images/Valletta-Gozo-Fast-Ferry.jpg"
            class="img-fluid rounded w-100"
            style="height:250px;object-fit:cover;"
@@ -73,7 +73,7 @@
   <!-- Repeat for every image … -->
   <!-- … Malta International Airport -->
   <div class="col">
-    <a data-bs-toggle="modal" data-bs-target="#modalMdina">
+    <a data-bs-toggle="modal" data-bs-target="#modalAirport">
       <img src="Images/Malta-International-Airport.jpg"
            class="img-fluid rounded w-100"
            style="height:250px;object-fit:cover;"
@@ -83,7 +83,7 @@
 
   <!-- … Year Round School-->
   <div class="col">
-    <a data-bs-toggle="modal" data-bs-target="#modalGozo">
+    <a data-bs-toggle="modal" data-bs-target="#modalSchool">
       <img src="Images/Year-Round-School.jpg"
            class="img-fluid rounded w-100"
            style="height:250px;object-fit:cover;"
@@ -93,7 +93,7 @@
 
   <!-- … Delimara Energy -->
   <div class="col">
-    <a data-bs-toggle="modal" data-bs-target="#modalRicasoli">
+    <a data-bs-toggle="modal" data-bs-target="#modalDelimara">
       <img src="Images/Delimara-Energy.jpeg"
            class="img-fluid rounded w-100"
            style="height:250px;object-fit:cover;"
@@ -117,7 +117,19 @@
       <div class="modal-body">
         <img src="Images/Energy-Bill.jpg" class="img-fluid rounded mb-3" alt="Energy Bill">
         <p><strong>Valletta – July 29, 2025</strong></p>
-        <p>The government has announced a one-time rebate on energy bills for households and small businesses as the country continues to face extreme heat...</p>
+       <p>
+  The Maltese government will issue a one-time rebate on electricity bills to help residents and small businesses cope with increased consumption during this summer's extreme heat. The measure, announced by Prime Minister Robert Abela, comes after weeks of record-breaking temperatures that have pushed energy usage to unprecedented levels.
+  <span id="moreDelimara" class="collapse">
+    The €50 rebate will be automatically applied to all residential and micro-business accounts on the August billing cycle. No application is necessary. The government says the total cost of the scheme is estimated at €25 million and will be funded via EU climate adaptation funds.
+
+    Environment groups cautiously welcomed the move but called for longer-term solutions such as improved insulation standards and solar incentives. Meanwhile, opposition parties criticized the one-time payment as “reactive” and urged the government to introduce a sliding scale of rebates based on income and household size.
+
+    The Prime Minister emphasized that this is part of a wider package to address the cost-of-living crisis, including subsidies on essential goods and a rent assistance review. Additional relief measures may be announced if the heatwave persists into September.
+  </span>
+  <a class="text-primary toggle-link" data-bs-toggle="collapse" href="#moreDelimara" role="button" aria-expanded="false" aria-controls="moreDelimara">View More</a>
+</a>
+</p>
+>
         <!-- Truncated for brevity; use full article here -->
       </div>
     </div>
@@ -135,7 +147,20 @@
       <div class="modal-body">
         <img src="Images/Valletta-Gozo-Fast-Ferry.jpg" class="img-fluid rounded mb-3" alt="Fast Ferry">
         <p><strong>Mgarr – July 29, 2025</strong></p>
-        <p>A new fast ferry service connecting Valletta to Mgarr, Gozo will launch this Friday...</p>
+       <p>
+  A new high-speed ferry service between Valletta and Mgarr, Gozo is launching this Friday, offering faster, more frequent travel options between the islands. Operated by IslandLink Ltd., the service promises to cut crossing times to under 45 minutes with state-of-the-art catamarans.
+  <span id="moreFerry" class="collapse">
+    The launch marks a significant investment in regional connectivity and aims to ease traffic congestion for commuters and tourists alike. The ferries will operate on an hourly schedule from 6:00 a.m. to 10:00 p.m., including weekends and public holidays. Each vessel includes Wi-Fi, bike storage, and full accessibility for persons with disabilities.
+
+    Gozo Minister Clint Camilleri stated that the service aligns with the government's broader efforts to improve inter-island mobility and economic integration. Residents and students from Gozo will benefit from subsidised ticketing, with prices starting at €2.50 per trip.
+
+    The new route is expected to compete with the existing Gozo Channel service and may prompt price adjustments industry-wide. A mobile app is now available for ticket reservations and live tracking. Officials expect high demand in the first few weeks, especially during the Santa Marija holiday. The project received EU co-financing under the Connecting Europe Facility.
+  </span>
+  
+  <a class="text-primary toggle-link" data-bs-toggle="collapse" href="#moreFerry" role="button" aria-expanded="false" aria-controls="moreFerry">View More</a>
+</a>
+</p>
+
         <!-- Truncated for brevity -->
       </div>
     </div>
@@ -153,7 +178,19 @@
       <div class="modal-body">
         <img src="Images/Malta-International-Airport.jpg" class="img-fluid rounded mb-3" alt="Airport">
         <p><strong>Luqa – July 29, 2025</strong></p>
-        <p>Malta International Airport (MIA) has recorded its busiest July in history...</p>
+       <p>
+  Malta International Airport has reported record-breaking traffic for July 2025, with over 950,000 passenger movements recorded in a single month—marking a historic high since the airport’s inception. The figures represent a 12% increase compared to July 2024, signaling strong tourism recovery and growing demand.
+  <span id="moreAirport" class="collapse">
+    CEO Alan Borg attributed the success to expanded flight routes, strategic partnerships with airlines, and a rise in international events attracting visitors to the island. Notably, direct flights to Warsaw, Lisbon, and Munich saw a significant uptick in bookings.
+
+    The airport’s management has pledged further investment in infrastructure, including enhanced security lanes, self-check-in kiosks, and upgraded lounges to support increased passenger flow. Construction of a new terminal wing is set to begin early next year. Meanwhile, environmental activists have raised concerns over increased emissions, urging authorities to balance tourism growth with sustainability.
+
+    The tourism authority also credited the success to effective marketing campaigns and the return of festivals such as Isle of MTV and Malta Jazz Festival. Industry experts expect the upward trend to continue into August, forecasting a strong end to the summer season.
+  </span>
+  <a class="text-primary toggle-link" data-bs-toggle="collapse" href="#moreAirport" role="button" aria-expanded="false" aria-controls="moreAirport">View More</a>
+
+</p>
+
         <!-- Truncated for brevity -->
       </div>
     </div>
@@ -171,7 +208,17 @@
       <div class="modal-body">
         <img src="Images/Year-Round-School.jpg" class="img-fluid rounded mb-3" alt="School">
         <p><strong>Valletta – July 29, 2025</strong></p>
-        <p>The Ministry for Education has opened a public consultation on a proposed shift to a year-round academic calendar...</p>
+        <p>
+  The Ministry for Education has launched a nationwide public consultation on a new proposal to introduce a year-round academic calendar for Maltese schools. The reform seeks to tackle student burnout and reduce summer learning loss by shortening summer holidays and distributing breaks more evenly across the year.
+  <span id="moreSchool" class="collapse">
+    If implemented, the model would reduce the current three-month summer break to six weeks while increasing mid-term and winter recesses. Supporters argue it will benefit working parents and allow for more balanced instruction. However, some educators and unions have voiced concern about potential burnout for staff, the cost of cooling classrooms during hotter months, and the implications for tourism-related businesses reliant on school holidays.
+
+    Education Minister Clifton Grima emphasized that no changes would be enforced without widespread support and said the consultation phase will run until the end of September. A pilot program is being considered for a small number of public schools in 2026. Public feedback can be submitted via the ministry’s website or during a series of community forums planned throughout August. The ministry aims to publish a white paper on the findings by the end of the year.
+  </span>
+<a class="text-primary toggle-link" data-bs-toggle="collapse" href="#moreSchool" role="button" aria-expanded="false" aria-controls="moreSchool">View More</a>
+
+</p>
+
         <!-- Truncated for brevity -->
       </div>
     </div>
@@ -189,7 +236,17 @@
       <div class="modal-body">
         <img src="Images/Delimara-Energy.jpeg" class="img-fluid rounded mb-3" alt="Delimara Energy">
         <p><strong>Valletta – July 29, 2025</strong></p>
-        <p>The Nationalist Party has renewed its call for full transparency regarding the 2023 Delimara power station energy deal...</p>
+       <p>
+  The Nationalist Party has renewed its call for full transparency regarding the 2023 Delimara power station energy deal. The Opposition claims that critical contractual terms were redacted from the documents submitted to Parliament, sparking fresh debate over the handling of national energy resources. 
+  <span id="moreDelimara" class="collapse">
+    According to Opposition spokesperson Ryan Callus, the deal's opacity risks undermining public trust and could potentially place an undue financial burden on future generations. He argued that key details—such as rates, clauses for breach of contract, and third-party beneficiaries—remain hidden despite repeated parliamentary questions. The PN is demanding an independent audit and full disclosure of all related agreements, including any offshore arrangements.
+
+    In response, Energy Minister Miriam Dalli reiterated the government's commitment to transparency, stating that all information legally permitted for publication had already been disclosed. However, she stopped short of committing to an audit. Public pressure has mounted as energy prices remain a national concern amid global inflation and high summer demand. A protest is scheduled outside Parliament next week, with civil society groups urging greater accountability in public-private energy partnerships.
+  </span>
+  <a class="text-primary toggle-link" data-bs-toggle="collapse" href="#moreEnergy" role="button" aria-expanded="false" aria-controls="moreEnergy">
+>View More</a>
+</p>
+
         <!-- Truncated for brevity -->
       </div>
     </div>
@@ -199,9 +256,23 @@
 
 
 
+<!--Javascript to change view more into view less and vice versa!-->
 
 
+<script>
+  document.querySelectorAll('.toggle-link').forEach(link => {
+    const targetId = link.getAttribute('href');
+    const target = document.querySelector(targetId);
 
+    target.addEventListener('shown.bs.collapse', () => {
+      link.textContent = 'View Less';
+    });
+
+    target.addEventListener('hidden.bs.collapse', () => {
+      link.textContent = 'View More';
+    });
+  });
+</script>
 
 
   

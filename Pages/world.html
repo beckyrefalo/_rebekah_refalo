@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Times of Malta</title>
+  
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Your Custom Styles -->
+<link href="Styling/styles.css" rel="stylesheet">
+
+
+   <!-- Top Utility Bar -->
+<nav class="bg-latte border-bottom py-3">
+<header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
+  <a href="jobs.html">Jobs</a>
+  <a href="polls.html">Polls</a>
+  <a href="archive.html">Archive</a>
+  <a href="subscribe.html">Subscribe</a>
+</header>
+
+  <!-- Logo Section -->
+  <header class="container d-flex align-items-center justify-content-center py-4">
+
+  <h1 class="m-0 fw-bold display-4 text-center" style="color: #6B4200; font-family: Georgia, serif;">
+    Times of Malta
+  </h1>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    
+ 
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white border-bottom py-3">
+    <div class="container d-flex justify-content-center gap-4 fw-semibold">
+      <a href="latest.html" class="text-dark text-decoration-none">Latest</a>
+      <a href="national.html" class="text-dark text-decoration-none">National</a>
+      <a href="world.html" class="text-dark text-decoration-none">World</a>
+      <a href="opinion.html" class="text-dark text-decoration-none">Opinion</a>
+      <a href="business.html" class="text-dark text-decoration-none">Business</a>
+      <a href="entertainment.html" class="text-dark text-decoration-none">Entertainment</a>
+    </div>
+  </nav>
+    <!-- World News Carousel -->
+<section class="container my-5">
+  
+  <div id="worldNewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="Images/Wildfires-in-Greece.jpg" class="d-block w-100 rounded" alt="Wildfires in Greece">
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="mt-3 mt-md-0">Massive Wildfires Rage Across Southern Europe</h4>
+            <p>Wildfires fueled by a record-breaking heatwave have swept across Greece, Italy, and Spain, prompting mass evacuations and international firefighting support. Authorities warn the extreme weather may persist through August.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="Images/Global-Elections-India.jpg" class="d-block w-100 rounded" alt="Global elections">
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="mt-3 mt-md-0">India Set for Record Voter Turnout in 2025 Elections</h4>
+            <p>With over 900 million eligible voters, India’s upcoming general election is poised to break turnout records. Key issues include inflation, climate policy, and digital privacy as voters head to the polls this September.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="Images/UN-Climate-Summit.jpg" class="d-block w-100 rounded" alt="UN Climate Summit">
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="mt-3 mt-md-0">UN Climate Summit Sees Mixed Progress on Global Pledges</h4>
+            <p>World leaders met in Geneva to assess climate commitments amid growing pressure from environmental groups. While new funding pledges were announced, key emitters remain divided on emissions targets.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#worldNewsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#worldNewsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
 </body>
 </html>

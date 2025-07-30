@@ -70,3 +70,97 @@ header.top-bar a:hover {
       background-color: rgba(255, 189, 124, 0.867);
     }
  
+    .btn-emerald {
+  background-color: #10b981; /* Emerald green */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-emerald:hover,
+.btn-emerald:focus {
+  background-color: #059669; /* Darker emerald on hover */
+  color: white;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;        /* centers the container */
+  columns: 2;
+  column-gap: 40px;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  text-align: center;    /* center-align text inside container */
+}
+
+/* Override text-align for articles to left for readability */
+article {
+  break-inside: avoid;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;       /* keep article text left aligned */
+  display: inline-block;  /* needed to center the article inside the container */
+  width: 100%;            /* make article fill the column */
+}
+
+/* Add spacing between navbar and article headings */
+.navbar, .nav-pills {
+  margin-bottom: 2rem;    /* or whatever spacing you prefer */
+}
+
+h2 {
+  font-family: 'Palatino Linotype', serif;
+  color: #024a32;
+  margin-bottom: 0.5rem;
+  /* add some top margin to separate from nav bar if needed */
+  margin-top: 1rem;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;        /* centers the container */
+  columns: 2;
+  column-gap: 40px;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  text-align: center;    /* center-align text inside container */
+}
+
+/* Override text-align for articles to left for readability */
+article {
+  break-inside: avoid;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;       /* keep article text left aligned */
+  display: inline-block;  /* needed to center the article inside the container */
+  width: 100%;            /* make article fill the column */
+}
+
+/* Add spacing between navbar and article headings */
+.navbar, .nav-pills {
+  margin-bottom: 2rem;    /* or whatever spacing you prefer */
+}
+
+h2 {
+  font-family: 'Palatino Linotype', serif;
+  color: #024a32;
+  margin-bottom: 0.5rem;
+  /* add some top margin to separate from nav bar if needed */
+  margin-top: 1rem;
+}
+
+/* Assuming the taskbar/nav uses this class */
+.navbar, .nav-pills {
+  margin-bottom: 3rem; /* increase space below nav */
+}
+
+/* Target the article heading */
+h2.article-title {
+  margin-top: 3rem; /* adds space above the heading */
+  color: #024a32;
+  font-family: 'Palatino Linotype', serif;
+}
