@@ -15,6 +15,10 @@
   <link href="Styling/styles.css" rel="stylesheet" />
 </head>
 <body>
+
+<body class="polls-page">
+
+
   <!-- Top Utility Bar -->
   <nav class="bg-latte border-bottom py-3">
     <header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
@@ -42,7 +46,7 @@
       <a href="business.html" class="text-dark text-decoration-none">Business</a>
       <a href="entertainment.html" class="text-dark text-decoration-none">Entertainment</a>
     </div>
-  </nav><!-- 1. Local Politics -->
+  </nav>
 
 <form>
   <h3>How satisfied are you with the current government's handling of Malta’s housing crisis?</h3>
@@ -52,9 +56,34 @@
   <label><input type="radio" name="housing_crisis" value="somewhat_dissatisfied"> Somewhat dissatisfied</label><br>
   <label><input type="radio" name="housing_crisis" value="very_dissatisfied"> Very dissatisfied</label><br>
   <button type="submit">Submit</button>
+
+
+  <div class="poll-block">
+  <form onsubmit="showResults(this); return false;">
+    <h3>How satisfied are you with the current government's handling of Malta’s housing crisis?</h3>
+    <label><input type="radio" name="housing_crisis" value="very_satisfied"> Very satisfied</label><br>
+    <label><input type="radio" name="housing_crisis" value="somewhat_satisfied"> Somewhat satisfied</label><br>
+    <label><input type="radio" name="housing_crisis" value="neutral"> Neutral</label><br>
+    <label><input type="radio" name="housing_crisis" value="somewhat_dissatisfied"> Somewhat dissatisfied</label><br>
+    <label><input type="radio" name="housing_crisis" value="very_dissatisfied"> Very dissatisfied</label><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div class="poll-results" style="display: none;">
+    <p><strong>Thank you for voting!</strong></p>
+    <p>Here are the sample results:</p>
+    <ul>
+      <li>Very satisfied – 15%</li>
+      <li>Somewhat satisfied – 25%</li>
+      <li>Neutral – 10%</li>
+      <li>Somewhat dissatisfied – 30%</li>
+      <li>Very dissatisfied – 20%</li>
+    </ul>
+  </div>
+</div>
+
 </form>
 
-<hr>
+
 
 <!-- 2. Environment -->
 <form>
@@ -67,7 +96,6 @@
   <button type="submit">Submit</button>
 </form>
 
-<hr>
 
 <!-- 3. Culture & Society -->
 <form>
@@ -80,7 +108,7 @@
   <button type="submit">Submit</button>
 </form>
 
-<hr>
+
 
 <!-- 4. Economy -->
 <form>
@@ -93,7 +121,7 @@
   <button type="submit">Submit</button>
 </form>
 
-<hr>
+
 
 <!-- 5. Lifestyle & Entertainment -->
 <form>
@@ -106,7 +134,7 @@
   <button type="submit">Submit</button>
 </form>
 
-<hr>
+
 
 <!-- 6. Education -->
 <form>
@@ -119,7 +147,7 @@
   <button type="submit">Submit</button>
 </form>
 
-<hr>
+
 
 <!-- 7. Health -->
 <form>

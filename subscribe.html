@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subscribe – Times of Malta</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your Custom Styles -->
+  <link href="Styling/styles.css" rel="stylesheet" />
+</head>
+
+ <!-- Top Utility Bar -->
+  <nav class="bg-latte border-bottom py-3">
+    <header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
+      <a href="jobs.html">Jobs</a>
+      <a href="polls.html">Polls</a>
+      <a href="archive.html">Archive</a>
+      <a href="subscribe.html">Subscribe</a>
+    </header>
+  </nav>
+
+  <!-- Logo Section -->
+  <header class="container d-flex align-items-center justify-content-center py-4">
+    <h1 class="m-0 fw-bold display-4 text-center" style="color: #6B4200; font-family: Georgia, serif;">
+      Times of Malta
+    </h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white border-bottom py-3">
+    <div class="container d-flex justify-content-center gap-4 fw-semibold">
+      <a href="latest.html" class="text-dark text-decoration-none">Latest</a>
+      <a href="national.html" class="text-dark text-decoration-none">National</a>
+      <a href="world.html" class="text-dark text-decoration-none">World</a>
+      <a href="opinion.html" class="text-dark text-decoration-none">Opinion</a>
+      <a href="business.html" class="text-dark text-decoration-none">Business</a>
+      <a href="entertainment.html" class="text-dark text-decoration-none">Entertainment</a>
+    </div>
+  </nav>
+
+
+<body class="subscription-page">
+
+
+  <!-- Subscription Plans -->
+  <section class="container py-4">
+    <div class="row text-center g-4">
+
+      <!-- Free Plan -->
+      <div class="col-md-4">
+        <div class="border p-4 h-100 shadow-sm">
+          <h3>Free</h3>
+          <p class="text-muted">€0/month</p>
+          <ul class="list-unstyled">
+            <li>✔️ Access to daily headlines</li>
+            <li>❌ No premium stories</li>
+            <li>❌ No weekend print</li>
+          </ul>
+          <button class="btn btn-outline-secondary">Continue Free</button>
+        </div>
+      </div>
+
+      <!-- Digital Plan -->
+      <div class="col-md-4">
+        <div class="border p-4 h-100 shadow-sm bg-light">
+          <h3>Digital</h3>
+          <p class="text-muted">€6.99/month</p>
+          <ul class="list-unstyled">
+            <li>✔️ Full online access</li>
+            <li>✔️ Premium articles</li>
+            <li>✔️ Mobile & tablet access</li>
+          </ul>
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Print Plan -->
+      <div class="col-md-4">
+        <div class="border p-4 h-100 shadow-sm">
+          <h3>Print + Digital</h3>
+          <p class="text-muted">€14.99/month</p>
+          <ul class="list-unstyled">
+            <li>✔️ Daily newspaper delivery</li>
+            <li>✔️ Full digital access</li>
+            <li>✔️ Free weekend magazine</li>
+          </ul>
+          <button class="btn btn-outline-dark">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup Form -->
+  <section class="container py-5">
+    <h2 class="mb-4">Create Your Account</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" required />
+      </div>
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required />
+      </div>
+      <div class="col-12">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="col-12">
+        <label for="password" class="form-label">Create Password</label>
+        <input type="password" class="form-control" id="password" required />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Subscribe Now</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 border-top">
+    <small>&copy; 2025 Times of Malta. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

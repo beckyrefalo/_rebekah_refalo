@@ -164,3 +164,49 @@ h2.article-title {
   color: #024a32;
   font-family: 'Palatino Linotype', serif;
 }
+
+
+.polls-page body,
+.polls-page form {
+  /* your styles here */
+}
+
+/* Or more specifically: */
+
+.polls-page form {
+  max-width: 600px;
+  margin: 2rem auto 3rem auto;
+  /* etc. */
+}
+
+.polls-page form h3 {
+  /* ... */
+}
+
+/* and so on */
+
+
+.subscription-page {
+  font-family: 'Georgia', serif;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+.subscription-page h1, h2, h3 {
+  color: #6B4200;
+}
+
+.subscription-page .btn-primary {
+  background-color: #6B4200;
+  border-color: #6B4200;
+}
+
+.subscription-page .btn-primary:hover {
+  background-color: #5b3600;
+  border-color: #5b3600;
+}
+
+.subscription-page input:focus {
+  border-color: #b48b5c;
+  box-shadow: 0 0 0 0.2rem rgba(180, 139, 92, 0.25);
+}
