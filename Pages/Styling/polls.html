@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Times of Malta</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your Custom Styles -->
+  <link href="Styling/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <nav class="bg-latte border-bottom py-3">
+    <header class="top-bar text-end py-2 px-4" role="banner" aria-label="Top header links">
+      <a href="jobs.html">Jobs</a>
+      <a href="polls.html">Polls</a>
+      <a href="archive.html">Archive</a>
+      <a href="subscribe.html">Subscribe</a>
+    </header>
+  </nav>
+
+  <!-- Logo Section -->
+  <header class="container d-flex align-items-center justify-content-center py-4">
+    <h1 class="m-0 fw-bold display-4 text-center" style="color: #6B4200; font-family: Georgia, serif;">
+      Times of Malta
+    </h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white border-bottom py-3">
+    <div class="container d-flex justify-content-center gap-4 fw-semibold">
+      <a href="latest.html" class="text-dark text-decoration-none">Latest</a>
+      <a href="national.html" class="text-dark text-decoration-none">National</a>
+      <a href="world.html" class="text-dark text-decoration-none">World</a>
+      <a href="opinion.html" class="text-dark text-decoration-none">Opinion</a>
+      <a href="business.html" class="text-dark text-decoration-none">Business</a>
+      <a href="entertainment.html" class="text-dark text-decoration-none">Entertainment</a>
+    </div>
+  </nav><!-- 1. Local Politics -->
+
+<form>
+  <h3>How satisfied are you with the current government's handling of Malta’s housing crisis?</h3>
+  <label><input type="radio" name="housing_crisis" value="very_satisfied"> Very satisfied</label><br>
+  <label><input type="radio" name="housing_crisis" value="somewhat_satisfied"> Somewhat satisfied</label><br>
+  <label><input type="radio" name="housing_crisis" value="neutral"> Neutral</label><br>
+  <label><input type="radio" name="housing_crisis" value="somewhat_dissatisfied"> Somewhat dissatisfied</label><br>
+  <label><input type="radio" name="housing_crisis" value="very_dissatisfied"> Very dissatisfied</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- 2. Environment -->
+<form>
+  <h3>What should be Malta's top environmental priority in the next five years?</h3>
+  <label><input type="radio" name="environment_priority" value="plastic_waste"> Reducing plastic waste</label><br>
+  <label><input type="radio" name="environment_priority" value="public_transport"> Improving public transport</label><br>
+  <label><input type="radio" name="environment_priority" value="marine_life"> Protecting marine life</label><br>
+  <label><input type="radio" name="environment_priority" value="renewable_energy"> Increasing renewable energy use</label><br>
+  <label><input type="radio" name="environment_priority" value="green_spaces"> Expanding green urban spaces</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- 3. Culture & Society -->
+<form>
+  <h3>How important do you think the Malta Film Festival is for promoting local talent?</h3>
+  <label><input type="radio" name="film_festival" value="extremely_important"> Extremely important</label><br>
+  <label><input type="radio" name="film_festival" value="quite_important"> Quite important</label><br>
+  <label><input type="radio" name="film_festival" value="neutral"> Neutral</label><br>
+  <label><input type="radio" name="film_festival" value="not_very_important"> Not very important</label><br>
+  <label><input type="radio" name="film_festival" value="not_at_all"> Not at all important</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- 4. Economy -->
+<form>
+  <h3>How confident are you about Malta’s economic recovery post-pandemic?</h3>
+  <label><input type="radio" name="economic_recovery" value="very_confident"> Very confident</label><br>
+  <label><input type="radio" name="economic_recovery" value="somewhat_confident"> Somewhat confident</label><br>
+  <label><input type="radio" name="economic_recovery" value="unsure"> Unsure</label><br>
+  <label><input type="radio" name="economic_recovery" value="somewhat_pessimistic"> Somewhat pessimistic</label><br>
+  <label><input type="radio" name="economic_recovery" value="very_pessimistic"> Very pessimistic</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- 5. Lifestyle & Entertainment -->
+<form>
+  <h3>What type of entertainment events would you like to see more of in Malta?</h3>
+  <label><input type="radio" name="entertainment_events" value="music_festivals"> Music festivals</label><br>
+  <label><input type="radio" name="entertainment_events" value="theatre"> Theatre performances</label><br>
+  <label><input type="radio" name="entertainment_events" value="art_exhibitions"> Art exhibitions</label><br>
+  <label><input type="radio" name="entertainment_events" value="food_wine_fairs"> Food and wine fairs</label><br>
+  <label><input type="radio" name="entertainment_events" value="outdoor_sports"> Outdoor sports events</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- 6. Education -->
+<form>
+  <h3>Should Malta invest more in digital learning and technology in schools?</h3>
+  <label><input type="radio" name="digital_learning" value="yes_definitely"> Yes, definitely</label><br>
+  <label><input type="radio" name="digital_learning" value="yes_caution"> Yes, but with caution</label><br>
+  <label><input type="radio" name="digital_learning" value="neutral"> Neutral</label><br>
+  <label><input type="radio" name="digital_learning" value="no_traditional"> No, traditional methods are better</label><br>
+  <label><input type="radio" name="digital_learning" value="no_opinion"> No opinion</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- 7. Health -->
+<form>
+  <h3>How do you rate the availability of mental health services in Malta?</h3>
+  <label><input type="radio" name="mental_health" value="excellent"> Excellent</label><br>
+  <label><input type="radio" name="mental_health" value="good"> Good</label><br>
+  <label><input type="radio" name="mental_health" value="fair"> Fair</label><br>
+  <label><input type="radio" name="mental_health" value="poor"> Poor</label><br>
+  <label><input type="radio" name="mental_health" value="very_poor"> Very poor</label><br>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
